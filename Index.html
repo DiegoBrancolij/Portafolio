@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Diego Brancoli</title>
     
-    <!-- Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;500&display=swap" rel="stylesheet">
     
-    <!-- Hoja de estilos -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,9 +25,7 @@
     </nav>
 
     <section id="hero">
-        <div class="hero-bg-placeholder">
-            <div class="hero-bg-note">📷 IMAGEN DE FONDO | Archivo: img/hero-bg.jpg | Fotografía urbana Santiago — arquitectura / geometría | Fuente sugerida: unsplash.com</div>
-        </div>
+        <div class="hero-bg-img"></div>
         <div class="hero-overlay"></div>
         
         <div class="hero-content">
@@ -67,21 +63,27 @@
             <h2 class="bebas">Diseñador end-to-end.</h2>
             
             <div class="about-grid">
-                <div class="about-text">
-                    <p>Diseñador UX/UI con perfil end-to-end: investigo, diseño e implemento. Me mueve entender a las personas antes de diseñar para ellas — cada proyecto empieza con escuchar, no con hacer.</p>
-                    <br>
-                    <p>He liderado proyectos para salud, e-commerce y servicios B2B donde el diseño resolvió problemas reales de personas reales. Mi stack incluye Figma, Adobe CC, Shopify, WordPress y desarrollo front-end. Busco un equipo donde importa tanto el por qué como el cómo.</p>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Diseñador UX/UI con perfil end-to-end: investigo, diseño e implemento. Me mueve entender a las personas antes de diseñar para ellas — cada proyecto empieza con escuchar, no con hacer.</p>
+                        <br>
+                        <p>He liderado proyectos para salud, e-commerce y servicios B2B donde el diseño resolvió problemas reales de personas reales. Mi stack incluye Figma, Adobe CC, Shopify, WordPress y desarrollo front-end. Busco un equipo donde importa tanto el por qué como el cómo.</p>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-tag">Figma</div>
+                        <div class="skill-tag">Adobe CC</div>
+                        <div class="skill-tag">Shopify</div>
+                        <div class="skill-tag">WordPress</div>
+                        <div class="skill-tag">HTML·CSS</div>
+                        <div class="skill-tag">JavaScript</div>
+                        <div class="skill-tag">UX Research</div>
+                        <div class="skill-tag">Meta Ads · SEO</div>
+                    </div>
                 </div>
-                
-                <div class="skills-grid">
-                    <div class="skill-tag">Figma</div>
-                    <div class="skill-tag">Adobe CC</div>
-                    <div class="skill-tag">Shopify</div>
-                    <div class="skill-tag">WordPress</div>
-                    <div class="skill-tag">HTML·CSS</div>
-                    <div class="skill-tag">JavaScript</div>
-                    <div class="skill-tag">UX Research</div>
-                    <div class="skill-tag">Meta Ads · SEO</div>
+
+                <div class="about-image">
+                    <img src="img/diego-perfil.jpg" alt="Diego Brancoli - Diseñador UX/UI" class="profile-img">
                 </div>
             </div>
         </div>
@@ -105,32 +107,7 @@
                         <div class="caso-number bebas">01</div>
                     </div>
 
-                    <div class="dinkenesh-layout">
-                        <div class="metric-block">
-                            <div class="metric-number">+60%</div>
-                            <div class="metric-label">Aumento en ventas sin inversión en marketing</div>
-                        </div>
-                        
-                        <div class="grid-2">
-                            <div class="img-placeholder h-360">
-                                <div class="img-title">USER PERSONA</div>
-                                <div class="img-instruction">Archivo: img/dinkenesh/user-persona.png — Captura del documento de User Persona creado durante la investigación UX. Puede ser desde Figma, PDF exportado o captura de pantalla.</div>
-                            </div>
-                            <div class="img-placeholder h-360">
-                                <div class="img-title">WIREFRAME</div>
-                                <div class="img-instruction">Archivo: img/dinkenesh/wireframe.png — Wireframe de la arquitectura y flujo de compra. Captura desde Figma u otra herramienta.</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="grid-1" style="margin-top: 24px;">
-                        <div class="img-placeholder h-420">
-                            <div class="img-title">RESULTADO FINAL — TIENDA ONLINE</div>
-                            <div class="img-instruction">Archivo: img/dinkenesh/resultado-final.png — Captura completa del storefront final de Dinkenesh en Shopify. Recomendado: extensión GoFullPage en Chrome para captura de página completa.</div>
-                        </div>
-                    </div>
-
-                    <div class="case-text-grid">
+                    <div class="case-text-grid" style="margin-top: 0; padding-top: 0; border-top: none; margin-bottom: 40px;">
                         <div class="text-col">
                             <h4>El problema</h4>
                             <p>Dinkenesh Chocolatería operaba con una tienda online que no convertía. La imagen de marca no comunicaba la calidad del producto y la experiencia de compra generaba fricción innecesaria.</p>
@@ -151,6 +128,35 @@
                             <p class="role-note">En colaboración con mi socio, diseñador gráfico, en dirección de arte y fotografía.</p>
                         </div>
                     </div>
+
+                    <div class="metric-block" style="width: 100%; margin-bottom: 24px; padding: 32px 40px; background: #E8402A; border-radius: 4px; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                        <div class="metric-number" style="font-family: 'Bebas Neue', sans-serif; font-size: 72px; line-height: 1; margin: 0;">+60%</div>
+                        <div class="metric-label" style="font-family: 'Inter', sans-serif; font-size: 14px; opacity: 0.9; max-width: 400px; line-height: 1.4; text-align: right;">Aumento en ventas sin inversión en marketing</div>
+                    </div>
+
+                    <div style="background: #0a1a2e2b; border-radius: 8px; padding: 32px; margin-bottom: 24px;">
+                        <div style="font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: #0A1A2E; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 20px;">INVESTIGACIÓN</div>
+                        <div class="grid-3">
+                            <img src="img/dinkenesh/user-persona.png" alt="User Persona Dinkenesh" style="width: 100%; height: auto; display: block; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);">
+                            <img src="img/dinkenesh/pain-points.png" alt="Pain Points Dinkenesh" style="width: 100%; height: auto; display: block; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);">
+                            <img src="img/dinkenesh/mensaje-marquetero.png" alt="Mensaje Marquetero Dinkenesh" style="width: 100%; height: auto; display: block; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);">
+                        </div>
+                    </div>
+
+                    <div style="background: #0a1a2e2b; border-radius: 8px; padding: 32px; margin-bottom: 24px;">
+                        <div style="font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: #0A1A2E; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 20px;">WIREFRAME</div>
+                        <div class="grid-1">
+                            <img src="img/dinkenesh/wireframe.png" alt="Wireframe Arquitectura y Flujo" style="width: 100%; height: auto; display: block; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);">
+                        </div>
+                    </div>
+
+                    <div style="background: #0a1a2e2b; border-radius: 8px; padding: 32px; margin-bottom: 24px;">
+                        <div style="font-family: 'Bebas Neue', sans-serif; font-size: 22px; color: #0A1A2E; letter-spacing: 0.15em; text-transform: uppercase; margin-bottom: 20px;">RESULTADO</div>
+                        <div class="grid-1">
+                            <img src="img/dinkenesh/resultado-final.png" alt="Resultado Final Tienda Online Dinkenesh" style="width: 100%; height: auto; display: block; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);">
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -165,22 +171,7 @@
                         <div class="caso-number bebas">02</div>
                     </div>
 
-                    <div class="grid-3">
-                        <div class="img-placeholder h-240">
-                            <div class="img-title">BRIEF / REQUERIMIENTOS</div>
-                            <div class="img-instruction">Archivo: img/desinfec/brief.png — Documento de requerimientos o brief inicial. Puede ser correo con instrucciones del cliente, documento Word, o captura de conversación de WhatsApp con los requerimientos.</div>
-                        </div>
-                        <div class="img-placeholder h-240">
-                            <div class="img-title">WIREFRAME — ESTRUCTURA AIDA</div>
-                            <div class="img-instruction">Archivo: img/desinfec/wireframe.png — Wireframe de la landing mostrando la estructura AIDA. Captura desde Figma u otra herramienta.</div>
-                        </div>
-                        <div class="img-placeholder h-240">
-                            <div class="img-title">RESULTADO FINAL</div>
-                            <div class="img-instruction">Archivo: img/desinfec/resultado-final.png — Captura de la landing page final publicada y operativa en AWS S3.</div>
-                        </div>
-                    </div>
-
-                    <div class="case-text-grid">
+                    <div class="case-text-grid" style="margin-top: 0; padding-top: 0; border-top: none; margin-bottom: 40px;">
                         <div class="text-col">
                             <h4>El problema</h4>
                             <p>Desinfec, empresa de desinfección y sanitización comercial en la zona de Osorno, necesitaba presencia digital que transmitiera confianza, informara sus certificaciones y convirtiera visitas en clientes.</p>
@@ -199,6 +190,21 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="grid-3">
+                        <div class="img-placeholder h-240">
+                            <div class="img-title">BRIEF / REQUERIMIENTOS</div>
+                            <div class="img-instruction">Archivo: img/desinfec/brief.png — Documento de requerimientos o brief inicial. Puede ser correo con instrucciones del cliente, documento Word, o captura de conversación de WhatsApp con los requerimientos.</div>
+                        </div>
+                        <div class="img-placeholder h-240">
+                            <div class="img-title">WIREFRAME — ESTRUCTURA AIDA</div>
+                            <div class="img-instruction">Archivo: img/desinfec/wireframe.png — Wireframe de la landing mostrando la estructura AIDA. Captura desde Figma u otra herramienta.</div>
+                        </div>
+                        <div class="img-placeholder h-240">
+                            <div class="img-title">RESULTADO FINAL</div>
+                            <div class="img-instruction">Archivo: img/desinfec/resultado-final.png — Captura de la landing page final publicada y operativa en AWS S3.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -213,18 +219,7 @@
                         <div class="caso-number bebas">03</div>
                     </div>
 
-                    <div class="grid-2">
-                        <div class="img-placeholder h-360">
-                            <div class="img-title">CALCULADORA IMC — FUNCIONALIDAD CUSTOM</div>
-                            <div class="img-instruction">Archivo: img/bariatrica/calculadora-imc.png — Captura de la calculadora IMC funcionando en el sitio bariatricaantofagasta.cl. Esta es la imagen más importante del caso. Mostrar los campos de la calculadora visibles y preferiblemente con datos de ejemplo ingresados.</div>
-                        </div>
-                        <div class="img-placeholder h-360">
-                            <div class="img-title">SITIO GENERAL</div>
-                            <div class="img-instruction">Archivo: img/bariatrica/sitio-general.png — Captura del home de bariatricaantofagasta.cl en desktop. Extensión GoFullPage recomendada.</div>
-                        </div>
-                    </div>
-
-                    <div class="case-text-grid">
+                    <div class="case-text-grid" style="margin-top: 0; padding-top: 0; border-top: none; margin-bottom: 40px;">
                         <div class="text-col">
                             <h4>El problema</h4>
                             <p>Especialista en cirugía bariátrica necesitaba presencia digital que informara sus servicios y generara leads calificados de forma automatizada, sin intervención manual.</p>
@@ -241,6 +236,17 @@
                                 <span class="role-tag">Código custom IMC</span>
                                 <span class="role-tag">Automatización de leads</span>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="grid-2">
+                        <div class="img-placeholder h-360">
+                            <div class="img-title">CALCULADORA IMC — FUNCIONALIDAD CUSTOM</div>
+                            <div class="img-instruction">Archivo: img/bariatrica/calculadora-imc.png — Captura de la calculadora IMC funcionando en el sitio bariatricaantofagasta.cl. Esta es la imagen más importante del caso. Mostrar los campos de la calculadora visibles y preferiblemente con datos de ejemplo ingresados.</div>
+                        </div>
+                        <div class="img-placeholder h-360">
+                            <div class="img-title">SITIO GENERAL</div>
+                            <div class="img-instruction">Archivo: img/bariatrica/sitio-general.png — Captura del home de bariatricaantofagasta.cl in desktop. Extensión GoFullPage recomendada.</div>
                         </div>
                     </div>
                 </div>
@@ -268,7 +274,6 @@
         </div>
     </footer>
 
-    <!-- Archivo JS -->
     <script src="main.js"></script>
 </body>
 </html>
