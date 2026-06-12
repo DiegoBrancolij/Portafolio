@@ -84,6 +84,7 @@ ul {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
     padding: 16px 32px;
     background-color: var(--accent-blue);
     color: var(--text-light);
@@ -106,6 +107,16 @@ ul {
 
 .btn-outline:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Botón de WhatsApp */
+.btn-whatsapp {
+    background-color: #25D366;
+    color: #FFFFFF;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
 }
 
 /* Nav */
@@ -168,13 +179,13 @@ nav {
 }
 
 .hero-bg-img {
-            position: absolute;
-            inset: 0;
-            background-image: url('img/hero-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+    position: absolute;
+    inset: 0;
+    background-image: url('img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .hero-overlay {
     position: absolute;
@@ -257,13 +268,33 @@ nav {
 
 #sobre-mi h2 {
     font-size: 64px;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
 }
 
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 64px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.about-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
 }
 
 .about-text {
@@ -298,65 +329,26 @@ nav {
 @media (max-width: 768px) {
     .about-grid { grid-template-columns: 1fr; }
 }
-/* Nuevas clases para layout de foto de perfil */
-        .about-content {
-            display: flex;
-            flex-direction: column;
-            gap: 48px; /* Separa el texto de las skills */
-        }
 
-        .about-image {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            min-height: 400px;
-        }
-
-        .profile-placeholder {
-            width: 100%;
-            height: 100%;
-            min-height: 400px;
-            background: rgba(255,255,255,0.05);
-            border: 2px dashed rgba(255,255,255,0.15);
-            border-radius: 4px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 32px;
-        }
-
-        .profile-placeholder .img-instruction {
-            color: rgba(255,255,255,0.5);
-            font-size: 12px;
-            line-height: 1.6;
-        }
-
-        .profile-img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Evita que tu foto se deforme */
-            border-radius: 4px;
-            /* Descomenta la línea de abajo si quieres que tu foto se vea en blanco y negro elegante */
-            /* filter: grayscale(100%) contrast(1.1); */
-        }
-
-/* Casos (Nuevos contenedores) */
+/* Casos Banner Introductorio */
 .casos-intro {
-    background: #F4F6FB;
-    padding: 100px 0 0;
+    background-color: var(--accent-blue);
+    color: var(--text-light);
+    padding: 80px 0;
+    text-align: center;
 }
 
 .casos-intro .eyebrow {
+    color: rgba(255, 255, 255, 0.8);
     margin-bottom: 16px;
 }
 
 .casos-intro h2 {
     font-size: 64px;
-    margin-bottom: 80px;
+    margin-bottom: 0;
 }
 
+/* Casos Base */
 .caso-wrapper-light {
     background: #F4F6FB;
     padding: 100px 0;
@@ -368,7 +360,6 @@ nav {
     color: #FFFFFF;
 }
 
-/* Estilos específicos para modo oscuro en Casos */
 .caso-wrapper-dark h3 {
     color: #FFFFFF;
 }
@@ -392,19 +383,6 @@ nav {
 
 .caso-wrapper-dark .case-text-grid {
     border-top: 1px solid rgba(255,255,255,0.1);
-}
-
-.caso-wrapper-dark .img-placeholder {
-    background: rgba(255,255,255,0.05);
-    border-color: rgba(255,255,255,0.15);
-}
-
-.caso-wrapper-dark .img-title {
-    color: #FFFFFF;
-}
-
-.caso-wrapper-dark .img-instruction {
-    color: rgba(255,255,255,0.5);
 }
 
 .caso-item {
@@ -465,56 +443,15 @@ nav {
     max-width: 80%;
 }
 
+/* Grids */
+.grid-1 { display: grid; grid-template-columns: 1fr; gap: 24px; }
 .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.grid-1 { display: grid; grid-template-columns: 1fr; gap: 24px; }
-
-.h-360 { height: 360px; }
-.h-420 { height: 420px; }
-.h-240 { height: 240px; }
 
 @media (max-width: 768px) {
-    .grid-2, .grid-3 { grid-template-columns: 1fr; }
-}
-
-/* Metric Block Dinkenesh */
-.dinkenesh-layout {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 24px;
-}
-
-.dinkenesh-layout .metric-block {
-    min-width: 200px;
-    padding: 28px 32px;
-    background: #E8402A;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: var(--text-light);
-}
-
-.dinkenesh-layout .metric-number {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 64px;
-    margin-bottom: 8px;
-    line-height: 1;
-}
-
-.dinkenesh-layout .metric-label {
-    font-size: 12px;
-    opacity: 0.9;
-    max-width: 160px;
-    line-height: 1.4;
-}
-
-.dinkenesh-layout .grid-2 {
-    flex: 1;
-}
-
-@media (max-width: 768px) {
-    .dinkenesh-layout { flex-direction: column; }
+    .grid-2, .grid-3 {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Case Text Columns */
@@ -565,7 +502,10 @@ nav {
 }
 
 @media (max-width: 768px) {
-    .case-text-grid { grid-template-columns: 1fr; gap: 32px; }
+    .case-text-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
 }
 
 /* Contacto */
@@ -596,7 +536,10 @@ nav {
 }
 
 @media (max-width: 600px) {
-    .contact-btns { flex-direction: column; padding: 0 24px; }
+    .contact-btns {
+        flex-direction: column;
+        padding: 0 24px;
+    }
 }
 
 /* Footer */
@@ -614,5 +557,9 @@ footer {
 }
 
 @media (max-width: 600px) {
-    .footer-content { flex-direction: column; gap: 16px; text-align: center; }
+    .footer-content {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
 }
